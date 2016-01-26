@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel='stylesheet prefetch' href='http://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenLite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/utils/Draggable.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/plugins/CSSPlugin.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="pomodoro.css">
+    <script type="text/javascript" src="pomodoro.js"></script>
+    
+  </head>
+  <body>
+    <div class="container">
+      <center>
+      <div class="radial-progress" data-progress="0">  
+        <div class="circle">
+          <div class="mask full">
+            <div class="fill"></div>
+          </div>
+          <div class="mask half">
+            <div class="fill"></div>
+            <div class="fill fix"></div>
+          </div>
+          <div class='shadow'></div>
+        </div>
+        <div class="ball-circle" id="ball-circle">
+          <div id="ball"></div>
+        </div>
+        <div class="inset">
+        </div>
+      </div>
+
+      <div class="core">
+        <div class="button" id="work">Work</div>
+        <div class="timer">
+          <div id="title">Pomodoro Timer</div>
+        </div>
+        <div class="button" id="break">Break</div>
+      </div>
+    </center>
+    </div>
+  </body>
+</html>
